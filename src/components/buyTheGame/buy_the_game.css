@@ -1,0 +1,10 @@
+.buy_the_game__background {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.buy_the_game__container {
+    height: 717px;
+
+    display: flex;
+}

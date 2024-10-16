@@ -1,0 +1,177 @@
+header {
+    height: 1000px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+}
+
+
+#youtube-logo,
+#vk,
+#facebook,
+#twitter,
+#twitch,
+#instagram {
+    max-width: 30px;
+    height: 30px;
+}
+
+.header__container_mini {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__socials {
+    padding-top: 4px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+}
+
+.header__advertising {
+    max-width: 39rem;
+    height: 369px;
+    background-color: var(--color-yellow);
+
+    clip-path: polygon(8% 0%, 101% 0%, 100% 86%, 92% 101%, -51% 100%);
+}
+
+.header__advertising-box {
+    width: 570px;
+    padding-top: 4.4rem;
+    padding-left: 4.44rem;
+    padding-bottom: 1.4rem;
+}
+
+.header__advertising-text {
+    font-family: 'Archangelsk', sans-serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.btn-advertising {
+    margin-left: 4.4rem;
+    font-size: 1.54rem;
+    background-color: var(--color-black);
+    color: var(--color-yellow);
+}
+
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@media screen and (max-width:1024px) {
+    .header {
+        height: 68vh;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .header__container_mini {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .header__container {
+        padding: 0 0 0 0;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    /*  .header__advertising-box {
+        width: auto;
+    }
+
+    .header__advertising-text {
+        font-size: calc(17px + 16 * ((100vw - 320px) / (624 - 320)));
+    } */
+
+}
+
+@media screen and (max-width:650px) {
+    .header__advertising {
+        /* max-width: 495px; */
+        width: 100%;
+        height: 355px;
+    }
+
+    .header__advertising-box {
+        width: 100%;
+    }
+
+    .header__advertising-text {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .header__advertising {
+        /* max-width: 320px; */
+        height: 207px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        clip-path: polygon(20% 0%, 101% 0%, 100% 75%, 83% 100%, -50% 100%)
+    }
+
+    .header__advertising-box {
+        width: 320px;
+        padding: 35px 0 20px 15px;
+        text-align: center
+    }
+
+    .header__advertising-text {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 30.63px;
+
+    }
+
+    .btn-advertising {
+        margin-left: 0;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header__socials {
+        gap: 1.8rem
+    }
+
+    #youtube-logo,
+    #vk,
+    #facebook,
+    #twitter,
+    #twitch,
+    #instagram {
+        max-width: 25px;
+        height: 25px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header {
+        height: 763px;
+    }
+
+    .header__container {
+        height: 743px;
+    }
+}
